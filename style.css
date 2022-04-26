@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* rem is related with root font size where 1rem = 16px
+     so here we change it to 10px i.e 1rem=10px now
+     so we can change only one place when we need in media query
+     why 10px because it can calculate easily with 10px rather 
+     than calculating with 16px
+     --
+     here we should not use directly 10px
+     10/16*100 = 62.5% === 10px
+  */
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-weight: 400; */
+  font-size: 16px;
+  /* line-height: 1.7; */
+  /* color: lightgray; */
+  padding: 3rem;
+}
+
+.risk-assesment-diagram {
+  display: flex;
+}
+
+.riskassesFrom {
+  display: inline-block;
+  background-color: black;
+  padding: 3px;
+  height: 64px;
+  width: 148px;
+  -webkit-clip-path: polygon(0 0, 55% 0, 100% 48%, 100% 99%, 0 99%);
+  clip-path: polygon(0 0, 55% 0, 100% 48%, 100% 99%, 0 99%);
+  /* padding: 5px 0 5px 10px; */
+}
+.riskassesFromInner {
+  padding: 0.6rem 1rem 0.4rem 1.5rem;
+  background: gray;
+  width: 140px;
+  height: 58px;
+  -webkit-clip-path: polygon(0 0, 55% 0, 100% 48%, 100% 99%, 0 99%);
+  clip-path: polygon(0 0, 55% 0, 100% 48%, 100% 99%, 0 99%);
+}
+
+.riskassesFromInner p {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+.riskassesTo {
+  display: inline-block;
+  background-color: black;
+  padding: 3px;
+  height: 64px;
+  width: 148px;
+  /* margin-left: 200px; */
+  -webkit-clip-path: polygon(0 48%, 45% 0, 100% 3%, 100% 99%, 0 99%);
+  clip-path: polygon(0 48%, 45% 0, 100% 3%, 100% 99%, 0 99%);
+  /* padding: 5px 0 5px 10px; */
+}
+.riskassesToInner {
+  padding: 0.6rem 0.5rem 0.4rem 4rem;
+  background: gray;
+  width: 140px;
+  height: 58px;
+  -webkit-clip-path: polygon(0 48%, 45% 0, 100% 3%, 100% 99%, 0 99%);
+  clip-path: polygon(0 48%, 45% 0, 100% 3%, 100% 99%, 0 99%);
+}
+
+.riskassesToInner p {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+.fromHorizontal {
+  width: 60px;
+  height: 4px;
+  background-color: black;
+  margin-top: 45px;
+  margin-left: -50px;
+}
+
+/* .fromTilt {
+  border-top: 4px solid black;
+  margin-left: -150px;
+  margin-top: 200px;
+  transform: rotate(79deg);
+} */
+
+.fromTilt {
+  border-left: 4px solid black;
+  display: block;
+  height: 100px;
+  width: 1px;
+  transform: rotate(-15deg);
+  margin-top: 47px;
+  margin-left: 10px;
+}
+.toHorizontal {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin-top: 45px;
+  /* margin-left: 200px; */
+}
+.bottomHorizontal {
+  width: 1200px;
+  height: 4px;
+  background-color: black;
+  margin-top: 275px;
+  margin-left: -1410px;
+}
+
+.toTilt {
+  border-left: 4px solid black;
+  display: block;
+  height: 100px;
+  width: 1px;
+  transform: rotate(15deg);
+  margin-top: 47px;
+  margin-right: 10px;
+  margin-left: 12px;
+}
+
+/* .toTilt {
+  border-top: 4px solid black;
+  margin-right: -469px;
+  margin-top: 372px;
+  transform: rotate(-79deg);
+} */
+.mt {
+  margin-top: 50px;
+}
+.middle-main {
+  width: 65%;
+}
+.middle-first {
+  display: flex;
+  justify-content: space-around;
+}
+.middle-second {
+  display: flex;
+  justify-content: space-around;
+}
+.middle-third {
+  display: flex;
+  justify-content: space-around;
+}
